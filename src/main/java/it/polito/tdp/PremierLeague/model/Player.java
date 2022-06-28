@@ -3,13 +3,30 @@ package it.polito.tdp.PremierLeague.model;
 public class Player {
 	Integer playerID;
 	String name;
+	Integer MatchID;
+	Double avg;
 	
-	public Player(Integer playerID, String name) {
+
+	
+	public Integer getMatchID() {
+		return MatchID;
+	}
+	public void setMatchID(Integer matchID) {
+		MatchID = matchID;
+	}
+	public Double getAvg() {
+		return avg;
+	}
+	public void setAvg(Double avg) {
+		this.avg = avg;
+	}
+	public Player(Integer playerID, String name, Integer matchID, Double avg) {
 		super();
 		this.playerID = playerID;
 		this.name = name;
+		MatchID = matchID;
+		this.avg = avg;
 	}
-	
 	public Integer getPlayerID() {
 		return playerID;
 	}
